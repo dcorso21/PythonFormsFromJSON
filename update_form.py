@@ -308,9 +308,10 @@ def get_downloaded_configs() -> list:
     ####    `param`:
     ## }
     """
+    # endregion Docstring
+
     import shutil, glob
 
-    # endregion Docstring
     downloads = Path.home() / "Downloads"
     json_files = glob.glob(str(downloads / "*.json"))
     saved_path = Path.cwd() / "config" / "saved_configurations"

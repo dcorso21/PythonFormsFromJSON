@@ -1,14 +1,18 @@
 {
   "metaconfig": {
     "lock_defaults": "^ Decides whether or not to use current defaults or defaults on config file.",
-    "cut_prints": "^ Clear the printed info for trading each stock"
+    "cut_prints": "^ Clear the printed info for trading each stock",
+    "debug_time": "09:35:22"
   },
   "misc": {
     "buy_clock_countdown_amount": "^ int, the amount of seconds before buying is viable again",
     "dollar_risk": "^ negative integer, Amount of money lost that will trigger an immediate exit",
     "hard_stop": "^ string, formatted as %H:%M:%S, time to force a trading stop.",
     "ideal_volatility": "^ integer, percentage value of ideal volatility",
-    "volume_check": "checks to make sure that the minimum dvol is over $100,000"
+    "volume_check": "checks to make sure that the minimum dvol is over $100,000",
+    "cancel_spec_time": 4,
+    "minimum_volume": 100000,
+    "lookahead_mins": 12
   },
   "buy_conditions": {
     "aggresive_average": {
@@ -50,6 +54,26 @@
       "active": "^ sell everything and stop trading if past certain time",
       "priority": 2,
       "minute_offset": "^ positive int, number of minutes before the hard_stop setting found under MISC."
+    },
+    "out_of_steam": {
+      "active": false,
+      "priority": 10
+    },
+    "breakeven": {
+      "active": false,
+      "priority": 6
+    },
+    "quit_early": {
+      "active": false,
+      "priority": 1
+    },
+    "four_red_candles": {
+      "active": false,
+      "priority": 5
+    },
+    "bad_differentials": {
+      "active": false,
+      "priority": 6
     }
   },
   "sim_settings": {
