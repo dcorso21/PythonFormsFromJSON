@@ -31,9 +31,15 @@ In order to change the contents of the form, you simply need to add a category t
 
 ## ToolTips
 
-You will also notice in the [example](https://rawcdn.githack.com/dcorso21/PythonFormsFromJSON/b28b802a4fa35e71d7dea34ed22b2738114a512f/config_form.html) that most fields have tool tip question mark symbols beside their field names. When you hover over you will see the descriptions saved in the `config/config_descriptions.json`. When you run the `update_form.py` file, it will warn you in the console if there are fields that dont have descriptions. When this message comes up, the fields in the `config/config_descriptions.json` will actually be created automatically. So if you create a new configuration setting, just run the `python update_form.py` in the console and it will copy the fields over to the description file. 
+You will also notice in the [example](https://rawcdn.githack.com/dcorso21/PythonFormsFromJSON/b28b802a4fa35e71d7dea34ed22b2738114a512f/config_form.html) that most fields have tool tip question mark symbols beside their field names. When you hover over you will see the descriptions saved in the `config/config_descriptions.json`. 
 
-Once those entries have been created, you will be asked if you would like to continue creating the form or not (Y/N?) If you press N, the program will end without updating the html file and you will have the opportunity to go back and 
+![Example of Tooltip](assets/imgs/tooltip.png)
+
+When you run the `update_form.py` file, it will warn you in the console if there are fields that dont have descriptions. When this message comes up, the fields in the `config/config_descriptions.json` will actually be created automatically. So if you create a new configuration setting, just run the `python update_form.py` in the console and it will copy the fields over to the description file. 
+
+Once those entries have been created, you will be asked if you would like to continue creating the form or not (Y/N?) If you press N, the program will end without updating the html file and you will have the opportunity to go back and fill in the description field.
+
+![Console View](assets/imgs/new_desc_fields.png)
 
 ## Submitting and Downloading The New Configuration
 
