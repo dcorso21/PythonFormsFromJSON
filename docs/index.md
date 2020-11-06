@@ -4,7 +4,7 @@
 2. [Implementation](#implementation)
 3. [How to Change the Form](#how-to-change-the-form)
 4. [ToolTips](#tooltips)
-5. [Submitting and Downloading The New Configuration](#submitting-and-downloading-the-form)
+5. [Submitting and Downloading The New Configuration](#submitting-and-downloading-the-new-configuration)
 
 
 ## Use Case
