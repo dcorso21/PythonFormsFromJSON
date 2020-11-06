@@ -1,3 +1,12 @@
+# Table Of Contents
+
+1. [Use Case](#use-case)
+2. [Implementation](#implementation)
+3. [How to Change the Form](#how-to-change-the-form)
+4. [ToolTips](#tooltips)
+5. [Submitting and Downloading The New Configuration](#submitting-and-downloading-the-form)
+
+
 ## Use Case
 
 I was working on a algorithmic trading backtester in Python and wanted to create a user friendly way to edit backtesting settings — which I was keeping in a json file. At the time, I didn't know Javascript and the barrier of learning the language seemed too high for this one use. So
