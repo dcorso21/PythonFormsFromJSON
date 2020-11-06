@@ -4,7 +4,13 @@ I was working on a algorithmic trading backtester in Python and wanted to create
 
 ## Implementation
 
-There is a javascript package called formio which is excellent for this very purpose. The idea is to yield one html file
+There is a javascript package called [Formio](https://github.com/formio/formio) which is excellent for this very purpose. It is a javascript library that will take a javascript object with form specific entries and produce a form in html. 
+
+So, in order to take my configuration file (which is called `config/config.json` in the repo) and translate that into a form, the steps are as follows:
+
+1. Import json in python.
+2. Create new json object (dictionary) which includes each configuration entry
+3. Convert the json dictionary to text and insert it into the `config_form.html` file.
 
 
 this is an [Example Form](https://rawcdn.githack.com/dcorso21/PythonFormsFromJSON/b28b802a4fa35e71d7dea34ed22b2738114a512f/config_form.html)
