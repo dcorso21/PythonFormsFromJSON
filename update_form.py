@@ -5,6 +5,9 @@ from pathlib import Path
 directory = Path.cwd()
 config_folder = directory / "config"
 
+# If on a PC, this directory may need to be edited to fit your download location. 
+DOWNLOADS_PATH = Path.home() / "Downloads"
+
 # FORM ELEMENTS
 form_elements = str(config_folder / "form_elements.json")
 with open(form_elements, "r") as f:
@@ -312,8 +315,7 @@ def get_downloaded_configs() -> list:
 
     import shutil, glob
 
-    downloads = Path.home() / "Downloads"
-    json_files = glob.glob(str(downloads / "*.json"))
+    json_files = glob.glob(str(DOWNLOADS_PATH / "*.json"))
     saved_path = Path.cwd() / "config" / "saved_configurations"
     saved = glob.glob(str(saved_path / "*.json"))
     saved = [os.path.basename(f) for f in saved]
