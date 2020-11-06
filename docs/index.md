@@ -1,13 +1,14 @@
-## Welcome to GitHub Pages
+## Use Case
+
+I was working on a algorithmic trading backtester in Python and wanted to create a user friendly way to edit backtesting settings — which I was keeping in a json file. At the time, I didn't know Javascript and the barrier of learning the language seemed too high for this one use. So
+
+## Implementation
+
+There is a javascript package called formio which is excellent for this very purpose. The idea is to yield one html file
 
 
-You can use the [editor on GitHub](https://github.com/dcorso21/PythonFormsFromJSON/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+this is an [Example Form](https://rawcdn.githack.com/dcorso21/PythonFormsFromJSON/b28b802a4fa35e71d7dea34ed22b2738114a512f/config_form.html)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```python
 def function():
